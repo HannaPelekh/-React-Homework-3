@@ -1,0 +1,56 @@
+#modal-root {
+    position: relative;
+    z-index: 100;    
+  }
+  .messsage-container{
+    background-color: #9fd8d8;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .messsage-box {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    height: 50%;
+    width: 30%;  
+    border-radius: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;    
+  }
+  .messsage-box::after{
+    content: '\f00d';    
+    position: absolute;
+    top: 23px;
+    right: 32px;  
+    font-family: FontAwesome;
+    font-size: 44px;    
+    color: #69b0b0;    
+}
+  .message-text{     
+    color: #59a1a1; 
+    width: 80%;    
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  .close{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px; 
+    background-color: rgba(28, 28, 28, 0);    
+    z-index: 200;
+    border: 0;
+    cursor: pointer; 
+} 
+  
